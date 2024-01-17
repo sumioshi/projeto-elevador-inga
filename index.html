@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elevator - IngáCode Challenge</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <audio id="elevator-arrival-sound" src="audios/Elevator Bell Ding - FREE SFX.mp4"></audio>
+  <audio id="button-click-sound" src="audios/Elevator button press sound effect.mp4"></audio>
+</head>
+<style>
+  
+</style>
+
+<body>
+  <div class="container mt-4">
+    <div class="building-section">
+        <div class="elevator-shaft bg-light border rounded p-3">
+            <div class="elevator bg-danger rounded"></div>
+        </div>
+    <div class="floor" id="floor1">
+        <button class="btn-up" onclick="requestElevator(1)">
+            ↑<span class="btn-text">Chamar Elevador para o 1° Andar.</span>
+        </button>
+    </div>
+    <div class="floor" id="floor2">
+        <button class="btn-up" onclick="requestElevator(2)">
+            ↑<span class="btn-text">Chamar Elevador para o 2° Andar.</span>
+        </button>
+    </div>
+    <div class="floor" id="floor3">
+        <button class="btn-up" onclick="requestElevator(3)">
+            ↑<span class="btn-text">Chamar Elevador para o 3° Andar.</span>
+        </button>
+    </div>
+    <div class="floor" id="floor4">
+        <button class="btn-up" onclick="requestElevator(4)">
+            ↑<span class="btn-text">Chamar Elevador para o 4° Andar.</span>
+        </button>
+    </div>
+</div>
+
+<div class="control-panel">
+  <div class="control-info">Botões do Painel de Controle (Você está dentro do Elevador)</div>
+    <div class="button" onclick="selectFloor(1)">Escolher Andar - 1</div>
+    <div class="button" onclick="selectFloor(2)">Escolher Andar - 2</div>
+    <div class="button" onclick="selectFloor(3)">Escolher Andar - 3</div>
+    <div class="button" onclick="selectFloor(4)">Escolher Andar - 4</div>
+</div>
+                  <footer class="text-center mt-4">
+                    <p>&copy; 2024 Simulação de Elevador | Desenvolvido por Rodrigo Sumioshi</p>
+                  </footer>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+      <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.building-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.elevator-shaft {
+  height: 300px;
+  width: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.elevator-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px; 
+}
+
+.elevator {
+  height: 50px;
+  width: 80px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  transition: bottom 0.5s ease;
+}
+
+
+
+.floor {
+  margin-top: -2px;
+  position: relative;
+}
+
+.btn-up {
+  background-color: #2ecc71;
+  border: none;
+  color: #fff;
+  padding: 5px; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  border-radius: 5px; 
+}
+
+.btn-text {
+  margin-left: 10px;
+}
+
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border: 1px solid #ccc; 
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px
+}
+
+.control-info {
+  background-color: #f8d7da;
+  color: #565656;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 1px;
+}
